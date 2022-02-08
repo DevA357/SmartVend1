@@ -20,6 +20,19 @@
 		3CFFEAB127AEC9EF004CC49F /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFEAB027AEC9EF004CC49F /* PaymentButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3C0FFD3427B1795500BDB1B0 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3CC466C627AAC7C70049D81B /* SmartVend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC466C927AAC7C70049D81B /* SmartVendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVendApp.swift; sourceTree = "<group>"; };
@@ -122,6 +135,7 @@
 				3CC466C227AAC7C70049D81B /* Sources */,
 				3CC466C327AAC7C70049D81B /* Frameworks */,
 				3CC466C427AAC7C70049D81B /* Resources */,
+				3C0FFD3427B1795500BDB1B0 /* Embed App Clips */,
 			);
 			buildRules = (
 			);

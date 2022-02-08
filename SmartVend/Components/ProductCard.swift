@@ -27,6 +27,7 @@ struct ProductCard: View {
                 Text("$\(product.price)")
                     .font(.caption)
                     .bold()
+                    
             }
             .padding()
             .frame(width: 180, alignment: .leading)
@@ -34,7 +35,7 @@ struct ProductCard: View {
             .cornerRadius(20)
             
         }
-        .frame(width: 150, height: 225)
+        .frame(width: 165, height: 255)
         .shadow(radius: 5)
             
             Button {

@@ -23,7 +23,7 @@ var productList = [Product(name: "Skittles", image: "skittles", price: Int(1.00)
                   Product(name: "Chettos Puff", image: "Chip4", price: Int(1.00)),
                   Product(name: "Lays Salt and vinegar", image: "layssalt", price: Int(1.00)),
                   Product(name: "Lays BBQ", image: "Chip6", price: Int(1.00)),
-                  Product(name: "Doritos cool ranch", image: "Chip7", price: Int(1.00)),
+                  Product(name: "Doritos cool ranch", image: "Chip7", price: Int(1.50)),
                   Product(name: "Minute Maid Lemonade", image: "Drink1", price: Int(1.05)),
                   Product(name: "Snapple fruit punch", image: "Drink2", price: Int(1.05)),
                    Product(name: "Swedish fish", image: "fish1", price: Int(1.00)),

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject var cartManger = CartManger()
-    var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     
                             
     var body: some View {
