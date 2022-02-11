@@ -35,7 +35,11 @@ struct ContentView: View {
                 } label: {
                     CartButton(numberofProducts:
                                 cartManger.products.count)
+            
+                
                 }
+                
+            
                 
                 }
             

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C8D256927B3FC600037EF20 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256827B3FC600037EF20 /* SearchBar.swift */; };
 		3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */; };
+		3C8D256E27B6AFC90037EF20 /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256D27B6AFC90037EF20 /* HelpButton.swift */; };
+		3C8D257027B6B3B60037EF20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D256F27B6B3B60037EF20 /* Launch Screen.storyboard */; };
 		3CC466CA27AAC7C70049D81B /* SmartVendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC466C927AAC7C70049D81B /* SmartVendApp.swift */; };
 		3CC466CC27AAC7C70049D81B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC466CB27AAC7C70049D81B /* ContentView.swift */; };
 		3CC466CE27AAC7C80049D81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC466CD27AAC7C80049D81B /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		3C8D256827B3FC600037EF20 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		3C8D256A27B4169A0037EF20 /* SmartVend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartVend.entitlements; sourceTree = "<group>"; };
 		3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		3C8D256D27B6AFC90037EF20 /* HelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButton.swift; sourceTree = "<group>"; };
+		3C8D256F27B6B3B60037EF20 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3CC466C627AAC7C70049D81B /* SmartVend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC466C927AAC7C70049D81B /* SmartVendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVendApp.swift; sourceTree = "<group>"; };
 		3CC466CB27AAC7C70049D81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				3CC466E627AD710A0049D81B /* CartButton.swift */,
 				3CC466EC27AD7DC60049D81B /* ProductRow.swift */,
 				3CFFEAB027AEC9EF004CC49F /* PaymentButton.swift */,
+				3C8D256D27B6AFC90037EF20 /* HelpButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		3CC466E327ACD9570049D81B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C8D256F27B6B3B60037EF20 /* Launch Screen.storyboard */,
 				3CC466CB27AAC7C70049D81B /* ContentView.swift */,
 				3CC466E827AD76F50049D81B /* CartView.swift */,
 				3C8D256827B3FC600037EF20 /* SearchBar.swift */,
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8D257027B6B3B60037EF20 /* Launch Screen.storyboard in Resources */,
 				3CC466D127AAC7C80049D81B /* Preview Assets.xcassets in Resources */,
 				3CC466CE27AAC7C80049D81B /* Assets.xcassets in Resources */,
 			);
@@ -208,6 +215,7 @@
 				3CC466E927AD76F50049D81B /* CartView.swift in Sources */,
 				3CC466CC27AAC7C70049D81B /* ContentView.swift in Sources */,
 				3CC466DD27AB51FC0049D81B /* Product.swift in Sources */,
+				3C8D256E27B6AFC90037EF20 /* HelpButton.swift in Sources */,
 				3CC466E227ACCBB50049D81B /* ProductCard.swift in Sources */,
 				3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */,
 				3CC466ED27AD7DC60049D81B /* ProductRow.swift in Sources */,
@@ -354,6 +362,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +396,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
