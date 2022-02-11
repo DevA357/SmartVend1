@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C8D256927B3FC600037EF20 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256827B3FC600037EF20 /* SearchBar.swift */; };
+		3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */; };
 		3CC466CA27AAC7C70049D81B /* SmartVendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC466C927AAC7C70049D81B /* SmartVendApp.swift */; };
 		3CC466CC27AAC7C70049D81B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC466CB27AAC7C70049D81B /* ContentView.swift */; };
 		3CC466CE27AAC7C80049D81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC466CD27AAC7C80049D81B /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C8D256827B3FC600037EF20 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3C8D256A27B4169A0037EF20 /* SmartVend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartVend.entitlements; sourceTree = "<group>"; };
+		3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		3CC466C627AAC7C70049D81B /* SmartVend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC466C927AAC7C70049D81B /* SmartVendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVendApp.swift; sourceTree = "<group>"; };
 		3CC466CB27AAC7C70049D81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		3CC466C827AAC7C70049D81B /* SmartVend */ = {
 			isa = PBXGroup;
 			children = (
+				3C8D256A27B4169A0037EF20 /* SmartVend.entitlements */,
 				3CC466C927AAC7C70049D81B /* SmartVendApp.swift */,
 				3CC466E327ACD9570049D81B /* Views */,
 				3CC466DE27AB605A0049D81B /* Components */,
@@ -85,6 +91,7 @@
 				3CC466CD27AAC7C80049D81B /* Assets.xcassets */,
 				3CC466CF27AAC7C80049D81B /* Preview Content */,
 				3CC466EA27AD78E10049D81B /* CartManger.swift */,
+				3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */,
 			);
 			path = SmartVend;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				3CC466CB27AAC7C70049D81B /* ContentView.swift */,
 				3CC466E827AD76F50049D81B /* CartView.swift */,
+				3C8D256827B3FC600037EF20 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,8 +209,10 @@
 				3CC466CC27AAC7C70049D81B /* ContentView.swift in Sources */,
 				3CC466DD27AB51FC0049D81B /* Product.swift in Sources */,
 				3CC466E227ACCBB50049D81B /* ProductCard.swift in Sources */,
+				3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */,
 				3CC466ED27AD7DC60049D81B /* ProductRow.swift in Sources */,
 				3CC466EB27AD78E10049D81B /* CartManger.swift in Sources */,
+				3C8D256927B3FC600037EF20 /* SearchBar.swift in Sources */,
 				3CC466CA27AAC7C70049D81B /* SmartVendApp.swift in Sources */,
 				3CC466E727AD710A0049D81B /* CartButton.swift in Sources */,
 			);
@@ -333,9 +343,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
+				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,9 +360,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Devin.App.SmartVend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,9 +376,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
+				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -376,9 +393,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Devin.App.SmartVend;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Devin.App.SmartVend357357000001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

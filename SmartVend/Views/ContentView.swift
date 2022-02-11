@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
     
     @StateObject var cartManger = CartManger()
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
@@ -21,6 +23,7 @@ struct ContentView: View {
                         ProductCard(product: Product)
                             .environmentObject(cartManger)
                     }
+                    
                 }
                 .padding()
             }

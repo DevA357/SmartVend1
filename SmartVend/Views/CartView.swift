@@ -11,6 +11,11 @@ struct CartView: View {
     @EnvironmentObject var cartManger: CartManger
     var body: some View {
         ScrollView {
+            
+            if cartManger.paymentSuccess {
+                Text(" Thank you")
+                        .padding()
+            }
             if cartManger.products.count > 0 {
                 ForEach(cartManger.products, id: \.id) {
                     product in
@@ -25,15 +30,21 @@ struct CartView: View {
             }
                 .padding()
                 
-                PaymentButton(action: {})
+                PaymentButton(action: cartManger.pay)
                     .padding()
             } else {
             Text("Your cart is empty")
+                
     }
             
         }
         .navigationTitle(Text("My Cart"))
         .padding(.top)
+        .onDisappear {
+            if cartManger.paymentSuccess {
+                cartManger.paymentSuccess = false
+            }
+        }
     }
 }
 
