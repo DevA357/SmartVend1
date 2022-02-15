@@ -10,15 +10,39 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var searchText = ""
+    
     
     @StateObject var cartManger = CartManger()
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
+
     
                             
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
+                VStack {
+                    TextField("Search Item", text: $searchText)
+                        .padding(.leading, 24)
+                    }
+                        .padding()
+                        .background(Color(.systemGray5))
+                        .cornerRadius(8)
+                        .padding(.horizontal)
+                        .overlay(
+                            
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                    .padding()
+                                    .foregroundColor(.gray)
+                                Spacer()
+                                Image(systemName: "xmark.circle.fill")
+                                    .padding(.horizontal, 25)
+                                    .foregroundColor(.gray)
+                                    .padding(.horizontal)
+                            })
+                        
+                LazyVGrid(columns: columns,  spacing: 20) {
                     ForEach(productList, id: \.id) { Product in
                         ProductCard(product: Product)
                             .environmentObject(cartManger)
@@ -38,11 +62,7 @@ struct ContentView: View {
             
                 
                 }
-                
-            
-                
                 }
-            
             }
         .navigationViewStyle(StackNavigationViewStyle())
         }
@@ -60,3 +80,4 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+

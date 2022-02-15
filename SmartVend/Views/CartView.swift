@@ -15,6 +15,8 @@ struct CartView: View {
             if cartManger.paymentSuccess {
                 Text(" Thank you")
                         .padding()
+                
+               
             }
             if cartManger.products.count > 0 {
                 ForEach(cartManger.products, id: \.id) {
@@ -26,6 +28,7 @@ struct CartView: View {
                         Spacer()
                     Text("$\(cartManger.total).00")
                         .bold()
+                   
                     
             }
                 .padding()
@@ -34,6 +37,10 @@ struct CartView: View {
                     .padding()
             } else {
             Text("Your cart is empty")
+                Spacer()
+                    .padding(300)
+                Image(systemName: "questionmark.circle")
+                    .foregroundColor(.red)
                 
     }
             

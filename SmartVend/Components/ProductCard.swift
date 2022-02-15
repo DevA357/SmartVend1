@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductCard: View {
     @EnvironmentObject var cartManger: CartManger
     var product: Product
+    //@State var zoomed = false
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -19,6 +20,7 @@ struct ProductCard: View {
                 .cornerRadius(30)
                 .frame(width: 180)
                 .scaledToFit()
+            
             
             VStack(alignment: .leading) {
                 Text(product.name)

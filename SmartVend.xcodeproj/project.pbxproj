@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C8D256927B3FC600037EF20 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256827B3FC600037EF20 /* SearchBar.swift */; };
 		3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */; };
 		3C8D256E27B6AFC90037EF20 /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D256D27B6AFC90037EF20 /* HelpButton.swift */; };
 		3C8D257027B6B3B60037EF20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D256F27B6B3B60037EF20 /* Launch Screen.storyboard */; };
@@ -38,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C8D256827B3FC600037EF20 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		3C8D256A27B4169A0037EF20 /* SmartVend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartVend.entitlements; sourceTree = "<group>"; };
 		3C8D256B27B4265F0037EF20 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		3C8D256D27B6AFC90037EF20 /* HelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButton.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				3C8D256F27B6B3B60037EF20 /* Launch Screen.storyboard */,
 				3CC466CB27AAC7C70049D81B /* ContentView.swift */,
 				3CC466E827AD76F50049D81B /* CartView.swift */,
-				3C8D256827B3FC600037EF20 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,7 +217,6 @@
 				3C8D256C27B4265F0037EF20 /* PaymentHandler.swift in Sources */,
 				3CC466ED27AD7DC60049D81B /* ProductRow.swift in Sources */,
 				3CC466EB27AD78E10049D81B /* CartManger.swift in Sources */,
-				3C8D256927B3FC600037EF20 /* SearchBar.swift in Sources */,
 				3CC466CA27AAC7C70049D81B /* SmartVendApp.swift in Sources */,
 				3CC466E727AD710A0049D81B /* CartButton.swift in Sources */,
 			);
@@ -354,7 +350,7 @@
 				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
 				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;
@@ -363,6 +359,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIMainStoryboardFile = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
 				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;
@@ -397,6 +394,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIMainStoryboardFile = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
