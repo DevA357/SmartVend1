@@ -350,7 +350,7 @@
 				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 5.5;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
 				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;
@@ -385,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = SmartVend/SmartVend.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 5.5;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVend/Preview Content\"";
 				DEVELOPMENT_TEAM = 9327DWPA75;
 				ENABLE_PREVIEWS = YES;

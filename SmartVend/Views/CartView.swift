@@ -41,6 +41,9 @@ struct CartView: View {
                     .padding(300)
                 Image(systemName: "questionmark.circle")
                     .foregroundColor(.red)
+                    Text("Having Trouble")
+                    .bold()
+                    .foregroundColor(.red)
                 
     }
             

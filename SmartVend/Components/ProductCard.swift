@@ -37,8 +37,8 @@ struct ProductCard: View {
             .cornerRadius(20)
             
         }
-        .frame(width: 165, height: 255)
-        .shadow(radius: 5)
+        .frame(width: 156, height: 235)
+        .shadow(radius:5)
             
             Button {
                 cartManger.addToCart(product: product)

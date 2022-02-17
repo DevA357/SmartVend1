@@ -15,7 +15,8 @@ class CartManger: ObservableObject {
     @Published var paymentSuccess = false
     
     func addToCart(product: Product) {
-        products.append(product)
+        let productToAdd = Product(name: product.name, image: product.image, price: product.price)
+        products.append(productToAdd)
         total += product.price
         
         
