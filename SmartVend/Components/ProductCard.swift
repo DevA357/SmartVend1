@@ -10,7 +10,8 @@ import SwiftUI
 struct ProductCard: View {
     @EnvironmentObject var cartManger: CartManger
     var product: Product
-    //@State var zoomed = false
+    var haoticImpact =
+    UIImpactFeedbackGenerator(style: .heavy)
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -42,6 +43,8 @@ struct ProductCard: View {
             
             Button {
                 cartManger.addToCart(product: product)
+                
+                self.haoticImpact.impactOccurred()
                 
             } label: {
                 Image(systemName: "plus")

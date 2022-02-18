@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var searchText = ""
     
     
+    
     @StateObject var cartManger = CartManger()
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
 
@@ -36,11 +37,16 @@ struct ContentView: View {
                                     .padding()
                                     .foregroundColor(.gray)
                                 Spacer()
+                                
+                                Button(action: { searchText = "" }, label: {
                                 Image(systemName: "xmark.circle.fill")
                                     .padding(.horizontal, 25)
                                     .foregroundColor(.gray)
                                     .padding(.horizontal)
+                                })
                             })
+                
+                
                         
                 LazyVGrid(columns: columns,  spacing: 20) {
                     ForEach(productList, id: \.id) { Product in
@@ -48,9 +54,11 @@ struct ContentView: View {
                             .environmentObject(cartManger)
                     }
                     
+                    
                 }
                 .padding()
             }
+            
             .navigationTitle(Text("Item Shop"))
             .toolbar {
                 NavigationLink {
@@ -59,9 +67,18 @@ struct ContentView: View {
                 } label: {
                     CartButton(numberofProducts:
                                 cartManger.products.count)
+            // navigationbar color
+                    
+              //  }.onAppear {
+                 //   UINavigationBar.appearance().backgroundColor = .systemRed
+                        
+                    
+              
+                       
+                                                
             
                 
-                }
+                    }
                 }
             }
         .navigationViewStyle(StackNavigationViewStyle())
