@@ -10,6 +10,10 @@ import SwiftUI
 struct CartView: View {
     @EnvironmentObject var cartManger: CartManger
     var body: some View {
+       // ZStack {
+           // LinearGradient(colors: [Color("color1"), Color("color")], startPoint: .bottom,
+                //endPoint: .topLeading)
+                //.edgesIgnoringSafeArea(.all)
         ScrollView {
             
             if cartManger.paymentSuccess {
@@ -64,3 +68,4 @@ struct CartView_Previews: PreviewProvider {
             .environmentObject(CartManger())
     }
 }
+// }

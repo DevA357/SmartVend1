@@ -16,26 +16,26 @@ struct ProductCard: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
         ZStack(alignment: .bottom) {
-            Image(product.image)
-                .resizable()
-                .cornerRadius(30)
-                .frame(width: 180)
-                .scaledToFit()
+           // Image(product.image)
+               // .resizable()
+                //.cornerRadius(30)
+               // .frame(width: 180)
+               // .scaledToFit()
             
             
-            VStack(alignment: .leading) {
-                Text(product.name)
-                    .bold()
+        //    VStack(alignment: .leading) {
+             //   Text(product.name)
+                   // .bold()
                 
-                Text("$\(product.price)")
-                    .font(.largeTitle)
-                    .bold()
+               // Text("$\(product.price)")
+                  //  .font(.largeTitle)
+                  //  .bold()
                     
-            }
-            .padding()
-            .frame(width: 180, alignment: .leading)
-            .background(.ultraThinMaterial)
-            .cornerRadius(20)
+         //   }
+           // .padding()
+          //  .frame(width: 180, alignment: .leading)
+          //  .background(.ultraThinMaterial)
+          //  .cornerRadius(20)
             
         }
         .frame(width: 156, height: 235)
@@ -47,10 +47,12 @@ struct ProductCard: View {
                 self.haoticImpact.impactOccurred()
                 
             } label: {
-                Image(systemName: "plus")
+                Image(product.image)
+                    .resizable()
+                    .scaledToFit()
                     .padding(10)
                     .foregroundColor(.white)
-                    .background(.black)
+                   // .background(.black)
                     .cornerRadius(50)
                     .padding(0)
             }

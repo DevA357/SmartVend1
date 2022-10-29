@@ -15,12 +15,15 @@ struct ContentView: View {
     
     
     @StateObject var cartManger = CartManger()
-    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
-
-    
+    var columns = [GridItem(.adaptive(minimum: 90), spacing: 20)]
                             
     var body: some View {
         NavigationView {
+           // ZStack {
+              //  LinearGradient(colors: [Color("color1"), Color("color")], startPoint: .bottom,
+                 //   endPoint: .topLeading)
+                  //  .edgesIgnoringSafeArea(.all)
+            
             ScrollView {
                 VStack {
                     TextField("Search Item", text: $searchText)
@@ -45,15 +48,12 @@ struct ContentView: View {
                                     .padding(.horizontal)
                                 })
                             })
-                
-                
                         
-                LazyVGrid(columns: columns,  spacing: 20) {
+                LazyVGrid(columns: columns,  spacing: 5) {
                     ForEach(productList, id: \.id) { Product in
                         ProductCard(product: Product)
                             .environmentObject(cartManger)
                     }
-                    
                     
                 }
                 .padding()
@@ -67,17 +67,8 @@ struct ContentView: View {
                 } label: {
                     CartButton(numberofProducts:
                                 cartManger.products.count)
-            // navigationbar color
-                    
-              //  }.onAppear {
-                 //   UINavigationBar.appearance().backgroundColor = .systemRed
-                        
-                    
-              
+           
                        
-                                                
-            
-                
                     }
                 }
             }
@@ -98,3 +89,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+//}
